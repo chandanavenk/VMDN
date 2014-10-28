@@ -2,4 +2,5 @@ VMDN: VMware Developer Network
 
 This mainly keeps track of set of projects and the employees working on it. 
 Employee details consists of his name followed by his contact details and the team he is currently working on.
+------------------------------------------------------------------------
 So that anyone interested in knowing about the project can just clik on the particular project to know more about it.
