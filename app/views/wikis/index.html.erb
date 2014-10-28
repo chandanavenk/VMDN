@@ -1,0 +1,28 @@
+
+<h1>Listing wikis testing</h1>
+
+
+<% @wikis.each do |wiki| %>
+  <tr>
+    <td><%= wiki.Project_Name %></td>
+    <td><%= wiki.Project_Owner %></td>
+    <td><%= wiki.Description %></td>
+    <td><%= wiki.Branches %></td>
+    <td><%= wiki.Team_Name %></td>
+    <td><%= wiki.Contact_details %></td>
+    <td><%= wiki.Link_to %></td>
+    <td><%= wiki._Applicaions %></td>
+    <td><%= wiki.References %></td>
+    <td><%= wiki.Backend %></td>
+    <td><%= wiki.Frontend %></td>
+    <td><%= link_to 'Show', wiki %></td>
+    <td><%= link_to 'Edit', edit_wiki_path(wiki) %></td>
+    <td><%= link_to 'Destroy', wiki, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <br>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wiki', new_wiki_path %>

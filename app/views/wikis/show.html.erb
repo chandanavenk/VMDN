@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project name:</b>
+  <%= @wiki.Project_Name %>
+</p>
+
+<p>
+  <b>Project owner:</b>
+  <%= @wiki.Project_Owner %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @wiki.Description %>
+</p>
+
+<p>
+  <b>Branches:</b>
+  <%= @wiki.Branches %>
+</p>
+
+<p>
+  <b>Team name:</b>
+  <%= @wiki.Team_Name %>
+</p>
+
+<p>
+  <b>Contact details:</b>
+  <%= @wiki.Contact_details %>
+</p>
+
+<p>
+  <b>Link to:</b>
+  <%= @wiki.Link_to %>
+</p>
+
+<p>
+  <b> applicaions:</b>
+  <%= @wiki._Applicaions %>
+</p>
+
+<p>
+  <b>References:</b>
+  <%= @wiki.References %>
+</p>
+
+<p>
+  <b>Backend:</b>
+  <%= @wiki.Backend %>
+</p>
+
+<p>
+  <b>Frontend:</b>
+  <%= @wiki.Frontend %>
+</p>
+
+
+<%= link_to 'Edit', edit_wiki_path(@wiki) %> |
+<%= link_to 'Back', wikis_path %>
+<%= link_to 'New Wiki', new_wiki_path %>

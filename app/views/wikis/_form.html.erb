@@ -1,0 +1,63 @@
+
+
+<%= form_for(@wiki) do |f| %>
+  <% if @wiki.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wiki.errors.count, "error") %> prohibited this wiki from being saved:</h2>
+
+      <ul>
+      <% @wiki.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Project_Name %><br />
+    <%= f.text_field :Project_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Project_Owner %><br />
+    <%= f.text_field :Project_Owner %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_area :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Branches %><br />
+    <%= f.text_area :Branches %>
+  </div>
+  <div class="field">
+    <%= f.label :Team_Name %><br />
+    <%= f.text_field :Team_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Contact_details %><br />
+    <%= f.number_field :Contact_details %>
+  </div>
+  <div class="field">
+    <%= f.label :Link_to %><br />
+    <%= f.text_field :Link_to %>
+  </div>
+  <div class="field">
+    <%= f.label :_Applicaions %><br />
+    <%= f.text_field :_Applicaions %>
+  </div>
+  <div class="field">
+    <%= f.label :References %><br />
+    <%= f.text_field :References %>
+  </div>
+  <div class="field">
+    <%= f.label :Backend %><br />
+    <%= f.text_field :Backend %>
+  </div>
+  <div class="field">
+    <%= f.label :Frontend %><br />
+    <%= f.text_field :Frontend %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

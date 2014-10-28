@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Project_Name: MyString
+  Project_Owner: MyString
+  Description: MyText
+  Branches: MyText
+  Team_Name: MyString
+  Contact_details: 1
+  Link_to: MyString
+  _Applicaions: MyString
+  References: MyString
+  Backend: MyString
+  Frontend: MyString
+
+two:
+  Project_Name: MyString
+  Project_Owner: MyString
+  Description: MyText
+  Branches: MyText
+  Team_Name: MyString
+  Contact_details: 1
+  Link_to: MyString
+  _Applicaions: MyString
+  References: MyString
+  Backend: MyString
+  Frontend: MyString
