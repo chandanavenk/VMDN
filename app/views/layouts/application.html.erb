@@ -2,16 +2,13 @@
 <html>
 <head>
   <style>
-  p {
-    color: #2E8B57;
-   // text-align: center;
-  }
-  h1{
-  color: orange;
-  //text-align:center;
+h2{
+  font-style: cursive;
+  text-align: center;
 }
 table {
-  width:100%;
+  table-layout: auto;
+  width:50%;
 }
 table tr:nth-child(even) {
   background-color: #eee;
@@ -23,13 +20,23 @@ table th {
   background-color: black;
   color:white;
 }
+#nav {
+  //line-height: 300px;
+  background-color: PaleGoldenRod;
+  height: 800px;
+  width: 200px;
+  float: right;
+  text-align: center;
+  font-family: cursive;
+  //padding: 5px;
+}
   </style>
   <title>Vmdn</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body style="background: #FFDAB9">
+<body style="background: #F4A460">
   
 <%= yield %>
 

@@ -1,6 +1,15 @@
 <h1>Hello Welcome to VMware Developer Network</h1>
+<hr>
+<div id="nav">
+<h1>List of Employees</h1>
+<hr>
+<% @employees.each do |employee| %>
+<%= employee.First_Name %> <%= link_to 'show', employee %><br>
+<%end%>
+</div>
+<br><br>
 
-<p>Please <%=link_to "Click here", employees_path %> to view the Employees list!
+<p align="center">Please <%=link_to "Click here", employees_path %> to view the Employees list!
 <br> <br>
 Please <%= link_to 'Click here', new_employee_path %> to create a New Employee! 
 <br><br>
