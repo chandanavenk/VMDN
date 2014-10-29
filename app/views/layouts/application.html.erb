@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  p {
+    color: #2E8B57;
+   // text-align: center;
+  }
+  h1{
+  color: orange;
+  //text-align:center;
+}
+table {
+  width:100%;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+table th {
+  background-color: black;
+  color:white;
+}
+  </style>
   <title>Vmdn</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
+<body style="background: #FFDAB9">
+  
 <%= yield %>
 
 </body>
