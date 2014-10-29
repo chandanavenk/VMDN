@@ -3,8 +3,8 @@
 <div id="nav">
 <h1>List of Employees</h1>
 <hr>
-<% @employees.each do |employee| %>
-<%= employee.First_Name %> <%= link_to 'show', employee %><br>
+<% @employees.each do |each_employee| %>
+<%= link_to "I am #{each_employee.First_Name}", each_employee %> <br>
 <%end%>
 </div>
 <br><br>
@@ -13,4 +13,5 @@
 <br> <br>
 Please <%= link_to 'Click here', new_employee_path %> to create a New Employee! 
 <br><br>
-Find me in app/views/home/index.html.erb</p>
+<!-- Find me in app/views/home/index.html.erb</p> -->
+
